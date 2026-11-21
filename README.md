@@ -1,0 +1,1 @@
+Copyright (c) 2026 Francisco Laguna Correa. All rights reserved. No part of this repository or website content may be reproduced, distributed, or transmitted without the prior written permission of the copyright owner.
