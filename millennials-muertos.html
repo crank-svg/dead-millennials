@@ -18,7 +18,7 @@
     <meta property="og:image" content="https://crank.mx/path-to-your-image.jpg">
     <!-- END OF SEO TAGS -->
 
- <style>
+<style>
     /* Navigation Styles */
     .nav-menu {
       text-align: center;
@@ -29,11 +29,11 @@
     .nav-menu a {
       margin: 0 10px;
       color: #ff3401; 
-      text-decoration: none; /* Removes underline from all links */
+      text-decoration: none; 
     }
 
     .nav-menu a.active {
-      text-decoration: underline; /* Adds underline ONLY to the active page */
+      text-decoration: underline; 
     }
 
     /* Main Body Styles */
@@ -62,7 +62,7 @@
       margin-bottom: 2em;
     }
 
-   /* Smooth Scrolling */
+    /* Smooth Scrolling */
     html {
       scroll-behavior: smooth;
     }
@@ -101,7 +101,8 @@
     section {
       scroll-margin-top: 20px; 
     }
-	   /* Floating TOC Menu */
+
+    /* Floating TOC Menu */
     .floating-toc {
       position: fixed;
       bottom: 80px; /* Sits above the back-to-top button */
@@ -117,12 +118,11 @@
       border-radius: 50%;
       cursor: pointer;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      list-style: none; /* Hides the default arrow */
+      list-style: none; 
       text-align: center;
       font-size: 20px;
     }
 
-    /* Hides the default triangle in some browsers */
     .floating-toc summary::-webkit-details-marker {
       display: none;
     }
@@ -147,22 +147,28 @@
       text-decoration: none;
       font-weight: bold;
     }
-	 <!-- Floating Table of Contents -->
-<details class="floating-toc">
-  <summary>☰</summary>
-  <div class="menu-content">
-    <a href="#parte-1">Primera Parte</a>
-    <a href="#sec-1">I</a>
-    <a href="#sec-2">II</a>
-    <a href="#sec-3">III</a>
-    <a href="#sec-4">IV</a>
-    <a href="#sec-5">V</a>
-    <a href="#sec-6">VI</a>
-    <a href="#sec-7">VII</a>
-    <a href="#top" style="border-top: 1px solid #ddd; padding-top: 10px; margin-top: 5px;">↑ Volver al inicio</a>
-  </div>
-</details>
-	  .chapter-nav {
+
+    /* Floating Back to Top Button */
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff3401;
+      color: white;
+      padding: 15px 18px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      font-family: sans-serif;
+      font-size: 20px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Next/Previous Chapter Navigation */
+    .chapter-nav {
       display: flex;
       justify-content: space-between;
       margin-top: 3em;
@@ -171,13 +177,13 @@
       font-family: sans-serif;
       font-size: 16px;
     }
+    
     .chapter-nav a {
       color: #ff3401;
       text-decoration: none;
       font-weight: bold;
     }
-Place this inside you
-  </style>
+</style>
 </head>
 <body>
 
@@ -364,7 +370,29 @@ Place this inside you
         <a href="#top" style="color: #ff3401; font-weight: bold; text-decoration: none;">↑ Volver al inicio</a>
     </div>
 	<hr style="border: none; border-top: 2px solid #000; margin-bottom: 2em;">
-	<footer><p>Disfruta la lectura</p><p>Todos los derechos reservados</p><p>©crank.mx ©flc</p><p style="text-align: center; font-size: 20px;"><strong>2026</strong></p></footer>
+	<footer><p>Disfruta la lectura</p><p>Todos los derechos reservados</p><p>©crank.mx ©flc</p><p style="text-align: center; font-size: 20px;"><strong>2026</strong></p>
+	</footer>
+
+	 <!-- 👇 FLOATING HTML GOES HERE, BEFORE </body> 👇 -->
+    
+    <!-- Floating Table of Contents -->
+    <details class="floating-toc">
+      <summary>☰</summary>
+      <div class="menu-content">
+        <a href="#parte-1">Primera Parte</a>
+        <a href="#sec-1">I</a>
+        <a href="#sec-2">II</a>
+        <a href="#sec-3">III</a>
+        <a href="#sec-4">IV</a>
+        <a href="#sec-5">V</a>
+        <a href="#sec-6">VI</a>
+        <a href="#sec-7">VII</a>
+        <a href="#top" style="border-top: 1px solid #ddd; padding-top: 10px; margin-top: 5px;">↑ Volver al inicio</a>
+      </div>
+    </details>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="floating-btn" title="Volver al inicio">↑</a>
 
 </body>
 </html>
