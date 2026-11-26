@@ -61,6 +61,46 @@
       margin-top: 3em;
       margin-bottom: 2em;
     }
+
+   /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Internal Table of Contents Styles */
+    .toc {
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      padding: 15px;
+      margin: 30px 0;
+      font-family: sans-serif;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .toc p {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .toc a {
+      display: inline-block;
+      margin: 5px 8px;
+      color: #ff3401;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+    }
+
+    /* Adds a little breathing room when jumping to a section */
+    section {
+      scroll-margin-top: 20px; 
+    }
   </style>
 </head>
 <body>
@@ -72,6 +112,22 @@
     <a href="bienes-decomisados.html">Bienes Decomisados</a>
   </nav>
 
+ <!-- Internal Table of Contents -->
+  <div class="toc">
+    <p>Índice de Contenidos</p>
+    <a href="#parte-1">Primera Parte</a> | 
+    <a href="#sec-1">I</a> | 
+    <a href="#sec-2">II</a> | 
+    <a href="#sec-3">III</a> | 
+    <a href="#sec-4">IV</a> | 
+    <a href="#sec-5">V</a> | 
+    <a href="#sec-6">VI</a> | 
+    <a href="#sec-7">VII</a>
+    <br><br>
+    <!-- Uncomment these when you add the next parts -->
+    <!-- <a href="#parte-2">Segunda Parte</a> | <a href="#sec-8">VIII</a> ... -->
+  </div>
+	
  <p style="text-align: center; border-top: 2px solid #000; border-bottom: 2px solid #000; padding: 15px 0; margin-top: 2em; margin-bottom: 2em;">
   <strong style="font-size: 2em;">Millennials Muertos</strong>
 </p>
@@ -88,7 +144,7 @@
 
 <br><br>
 
-<p style="text-align: center; font-size: 24px;"><strong>PRIMERA PARTE</strong></p>
+<p id="parte-1" style="text-align: center; font-size: 24px;"><strong>PRIMERA PARTE</strong></p>
 <br>
 	<p style="text-align: right; font-size: 14px;">"Why do they like every house better than their home?"</p>
 						<p style="text-align: right; font-size: 14px;">C.S. Lewis</p>
@@ -97,7 +153,9 @@
 	<p style="text-align: right; font-size: 14px;">“The Greatest”</p>
 	<p style="text-align: right; font-size: 14px;">Cat Power</p>
 <br>	
-			<p style="text-align: center; font-size: 22px;"><strong>I</strong></p>
+<!-- I -->
+<section id="sec-I">
+	<p style="text-align: center; font-size: 22px;"><strong>I</strong></p>
 <p><em>Ciudad de México, 19 de septiembre de 1985.</em></p>
 <br>
 <p>La tierra recordó antes que ellos.</p>
@@ -108,9 +166,11 @@
 	<p>Empieza con los que estaban a punto de nacer.<sup style="font-size: 12px;">1</sup></p>
 <br>
 <p><sup style="font-size: 12px;">1</sup> El narrador, que lleva meses hurgando en los archivos del 85, ha aprendido una cosa: los muertos no se cuentan con estadísticas. Se cuentan con los vivos que quedan. Por eso esta novela no empieza con los cadáveres bajo el Regis. Empieza con las vidas que flotaban en el líquido amniótico esa mañana, escuchando el temblor a través de la pared del vientre, registrando en algún lugar profundo de su memoria celular la frecuencia exacta de un mundo que se rompe. Esa frecuencia, décadas después, seguirá sonando en los huesos de los que nacieron del escombro. Y ellos, sin saberlo, pasarán la vida tratando de traducirla. Eso no es una metáfora. Es geología. La memoria del terremoto se incoa en el cuerpo como el mercurio en el pescado: no se ve, pero ahí está. Y los que estábamos por nacer ese día la llevamos dentro. El narrador no está exento. Por eso escribe con las manos temblando. Por eso a veces las mayúsculas se desalinean. Por eso esta nota al pie no es una digresión, sino un temblor, una pausa que dura ciento veinte segundos. El único testimonio fiable de lo que esta novela intenta decir: que el origen no es un lugar sino un temblor. Y que el narrador, aunque parezca invisible, aquí está.</p>
+</section> <!-- CLOSE THE SECTION HERE -->
+	<br>
 <br>
-<br>
-			<p style="text-align: center; font-size: 22px;"><strong>II</strong></p>
+			<section id="sec-II">
+	<p style="text-align: center; font-size: 22px;"><strong>II</strong></p>
 <p>En algún lugar de la Colonia Roma —en uno de esos edificios que sobrevivieron, que quedaron agrietados y humillados pero en pie, su fachada marcada con los jeroglíficos del colapso estructural— una mujer llamada Consuelo Domínguez Partida se aferró al marco de una puerta y pensó, con esa claridad prístina que otorga el terror: tengo cuatro meses de embarazo y voy a morir en un marco de puerta.</p>
 <p>No murió.</p>
 <p>Su hija nacería en febrero de 1986, y la llamaría Dulce, aunque la niña después insistiría en que la llamaran Sweet, porque había leído en algún lado que la traducción era el primer acto de rebeldía, y se lo creyó, como solo alguien criado entre las ruinas de algo magnífico puede creer en el poder transformador de renombrar las cosas.</p>
@@ -123,7 +183,9 @@
 <p>Era, por supuesto, una metáfora. Pero en la Ciudad de México, las metáforas tienen la molesta costumbre de ser literalmente ciertas.<sup style="font-size: 12px;">2</sup></p>
 <br>
 <p><sup style="font-size: 12px;">2</sup> El narrador, que ya ha visto a Sweet caminar por los pasillos de la Facultad de Filosofía y Letras con un ejemplar de Benjamin bajo el brazo, sabe que esa memoria sísmica no es una metáfora. Es un dato. Más de quince años después del temblor, cuando Sweet se pare frente al <em>Cuadrado negro</em> de Malévich en una pantalla de aula universitaria, su mano no temblará. Su pulso, sí. Porque el cuerpo no olvida. Porque el líquido amniótico de Consuelo registró la frecuencia de la tierra moviéndose, y esa frecuencia se alojó en algún lugar del sistema nervioso de la niña que aún no había abierto los ojos. Sweet no sabe esto. Cree que eligió estudiar grietas por razones intelectuales. Cree que su tesis sobre el deterioro material de las pinturas es un proyecto académico. El narrador, que ya ha visto los archivos personales de todos los personajes de esta novela, sabe que ninguna elección es accidental. Los cuerpos eligen por nosotros. La ciudad elige por nosotros. Los muertos, también lo hacen. Por eso esta nota al pie no es una nota al pie. Es un primer informe de laboratorio de la memoria. Resultado: positivo. La paciente ha estado marinando en sismología desde antes de nacer. Síntomas: una tendencia irresistible a pararse frente a las superficies y preguntarse qué hay debajo. Tratamiento: ninguna farmacopea ha sido diseñada para curar la conciencia de la falla geológica. Solo queda escribir. O leer. O sentarse en una mesa los sábados y comer mole mientras la conversación vibra en la misma frecuencia que la placa de Cocos. El narrador, que se ha sometido a este tratamiento durante años, puede certificar que no funciona. No cura nada. Pero hace que el temblor sea soportable. Y eso, en esta ciudad, es el único milagro que podemos permitirnos.</p>
-<br>
+</section>
+				<br>
+	<section id="sec-III">
 			<p style="text-align: center; font-size: 22px;"><strong>III</strong></p>
 	<p>Tres cuadras al este y catorce meses después, en una vecindad de la Colonia Doctores —de esos patios interiores rodeados de departamentos angostos donde el sonido viaja con la indiscreción democrática del transporte público— nació un niño llamado Agosto en abril de 1987.</p>
 <p>Su madre, Rosario, había elegido el nombre con anticipación y no lo explicaba. Agosto. Un mes de calor y pesadez, de tardes lentas y promesa de lluvia. Su padre, cuyo nombre Rosario trataba como información clasificada, estaba ausente del modo total y corriente que los padres en la Colonia Doctores solían estarlo —no de una manera dramática, ni trágica, sino con la plenitud banal de un camión que simplemente nunca llega y que, al cabo de un rato, dejas de esperar.</p>
@@ -134,7 +196,9 @@
 <p>Apenas tenía ocho años.<sup style="font-size: 12px;">3</sup></p>
 	<br>
 <p><sup style="font-size: 12px;">3</sup> El narrador, que ha pasado agotadoras horas en ese gimnasio, sentado en una banca de madera mientras los guantes golpeaban el costal con la regularidad de un metrónomo defectuoso, puede confirmar una cosa: la gramática no se enseña. Se encarna. El Maestro Cisneros no explicaba la diferencia entre un jab y un cross. La demostraba. Y el cuerpo de Agosto, ese cuerpo pequeño y todavía descoordinado que cargaría con la ausencia de un padre, con la furia de un barrio y con la pregunta de un amigo desaparecido, fue absorbiendo la gramática golpe por golpe. No la gramática del boxeo. Pero sí la gramática de la resistencia. La que no se aprende en los libros. La que se aprende en el patio, en la vecindad, en la calle donde el sonido viaja con la indiscreción democrática de un lugar donde nadie tiene privacidad y, por lo tanto, todos tienen testimonio. Doña Carmen veía todo desde su puesto de periódicos. El Cóndor de Tacubaya veía todo desde su silla de plástico. La vecindad entera era un ojo colectivo, una retina de doce departamentos que registraba cada golpe, cada caída, cada vez que un niño se levantaba después de perder su canica. Esa retina es la que Agosto llevaría consigo a Princeton, a la Secretaría de Relaciones Exteriores, a Damasco. No la memoria muscular de la pelea, sino la memoria celular de ser visto. De que alguien, siempre, estaba mirando. Por eso, cuando años después Kimmy le mostrara su pared con la frase de Don Refugio, una frase que aún no se puede revelar, Agosto entendería. No porque lo hubiera leído, sino porque lo había vivido. Porque en la Doctores, la mirada de los vecinos era la única infraestructura que funcionaba. Y esa infraestructura, aunque ningún censo la registrara, seguía en pie. Como el edificio. Como el patio. Como la prensa de la tortillería que nunca dejaba de latir. El narrador, que ha estado en ese patio, puede oírlo todavía. No es una metáfora. Es un latido. Y los que crecieron escuchándolo, conocen muy bien la textura de esos sonidos.</p>
-	<br>
+	</section>
+		<br>
+		<section id="sec-IV">
 			<p style="text-align: center; font-size: 22px;"><strong>IV</strong></p>
 	<p>El mismo año en que Agosto comenzó a boxear, en una casa en Coyoacán con demasiados libros y pocos estantes, un niño llamado Aldous se puso un par de tenis de básquetbol por primera vez y entendió de inmediato que había nacido en el país equivocado.</p>
 <p>Los tenis eran Nike Air Jordan —piratas, comprados en el mercado de Tepito, con un swoosh que se curvaba en un ángulo ligeramente incorrecto— pero eso no importaba. Lo que importaba era la sensación. La sensación de amarrárselos, de pararse en ellos, de dar los primeros pasos titubeantes sobre el concreto disparejo de la entrada y percibir que el suelo se había convertido en un cómplice, no en un obstáculo.</p>
@@ -147,7 +211,9 @@
 <p>Siguió jugando de todas formas.<sup style="font-size: 12px;">4</sup></p>
 	<br>
 <p><sup style="font-size: 12px;">4</sup> El narrador, que ha visto los archivos de la CONADE y las listas de reclutamiento universitario de los noventa, puede afirmar con certeza que Aldous no estaba solo. Había cientos como él. Cientos de cuerpos altos y rápidos que se movían por las canchas de la Liga Municipal como fantasmas de un sistema que no existía. La diferencia entre Aldous y los otros no era el talento. Era la capacidad de articular la pérdida. De convertir la frustración en lenguaje. Años después, cuando escribiera un libro sobre el tema de la pérdida y el cuerpo, Aldous estaría traduciendo para todos esos cuerpos anónimos lo que ellos sentían pero no podían decir: que el país no solo no los veía, sino que había diseñado su ceguera como una forma de hacer política. No se trataba de negligencia. Sino de simple arquitectura ideológica. El sistema de desarrollo deportivo mexicano no estaba roto porque nunca había sido construido. Y esa ausencia fundacional era la condición de posibilidad de todo lo demás. Aldous lo entendió antes de tener las palabras para decirlo. Lo entendió en la cancha, en el silencio después del partido, cuando los cuarenta espectadores se iban a sus casas y él se quedaba solo bajo el aro doblado, recogiendo las pelotas. Ese silencio no era una expresión de un vacío interno. Era el sonido de un país que no sabía qué hacer con los cuerpos que producía. El narrador, que ha estado en esa cancha cuando ya todos se fueron, puede oírlo todavía. No es un lamento. Es un diagnóstico. Y los diagnósticos, en México, siempre son también sentencias de muerte. O de vida. Depende de quién los lea.</p>
-	<br>
+		</section>
+			<br>
+	<section id="sec-V">
 			<p style="text-align: center; font-size: 22px;"><strong>V</strong></p>
 	<p>Y luego estaba Kimmy…</p>
 <p>Kimberly Sandoval Herrera —nacida en 1984, criada en la Colonia Guerrero, a dos estaciones de metro al norte de la vecindad de Agosto— era el tipo de niña que los adultos describían como “intensa” cuando se sentían generosos, y “difícil” cuando no. Ordenaba sus colores en secuencia cromática y se angustiaba —genuinamente, fisiológicamente angustiada, con respiración acelerada y una sensación que ella describía como “hormigas dentro del pecho”— cuando alguien alteraba la secuencia. Contaba los pasos de su departamento a la escuela (437) y se sentía obligada a volver a contarlos si perdía la cuenta. Se lavaba las manos hasta que se le agrietaban y sangraban, no porque temiera a los gérmenes —el concepto de gérmenes era, a los seis años, demasiado abstracto para temerle— sino porque el acto de lavarse producía una sensación de completitud, de cierre, que no podía alcanzar de otra manera.</p>
@@ -159,7 +225,9 @@
 <p>Solo sabía que el mundo estaba roto y que no podía dejar de intentar arreglarlo.<sup style="font-size: 12px;">5</sup></p>
 	<br>
 <p><sup style="font-size: 12px;">5</sup> El narrador, que ha leído las notas de terapia de Kimmy años después, puede confirmar que las hormigas nunca se fueron del todo. La medicación las redujo de un enjambre a un par de exploradoras solitarias. La terapia las reeducó, les enseñó que no todas las superficies necesitan ser limpiadas, que no todos los objetos requieren una categoría. Pero las hormigas siguen ahí. Son parte del ecosistema interno de Kimmy, como la falla geológica es parte del subsuelo de la ciudad. La diferencia es que ya no las combate. Las entrena. Les asigna tareas. Les dice: esta urgencia que sientes, este pánico ante el desorden, este miedo a que si no cuentas tus pasos ahora mismo algo terrible va a pasar, y comprende que todo eso no es un error. Es un motor que le ha dicho a Kimmy: <em>Úsalo para organizar la colonia. Úsalo para mapear lo invisible. Úsalo para sentarte en una mesa de la Narvarte los sábados y no contar los minutos.</em> Funciona, la mayoría del tiempo. Cuando no funciona, Kimmy se lava las manos. No por compulsión, sino por protocolo. Porque hay algo en el agua y el jabón que recuerda al cuerpo que el desorden externo no es una amenaza, sino una oportunidad. El narrador, que años después ha visto a Kimmy lavarse las manos después de cada reunión del Centro de Acción Comunitaria, puede asegurar que el gesto ha perdido su filo neurótico. Ahora es una práctica casi ceremonial. Como encender una vela. Como servir el mole. Como poner un plato extra en la mesa el dos de noviembre. No es un síntoma. Es un ritual. Y los rituales, en esta ciudad con veinte millones de habitantes, son la única forma de arquitectura que realmente funciona porque nos sugiere que el orden es posible.</p>
-	<br>
+	</section>
+		<br>
+	<section id="sec-VI">
 			<p style="text-align: center; font-size: 22px;"><strong>VI</strong></p>
 	<p>Y está David… que es el más difícil de comenzar a contar, porque David es el que desaparece.</p>
 <p>En cada generación hay personas que parecen existir en estado de partida inminente, cuya presencia en cualquier momento dado está socavada por la sospecha —de ellos y de todos los demás— de que ya están en camino a otro lugar. David Mendoza Arriaga era una de esas personas. Nacido en 1985, criado en la Colonia Narvarte en un departamento que olía de forma permanente a aceite de máquina de coser de su madre y a cigarros Delicados de su padre, David se movió por su infancia como un turista en su propia biografía.</p>
@@ -171,7 +239,9 @@
 <p>También casi lo destruiría, pero eso, también, ocurrirá después.<sup style="font-size: 12px;">6</sup></p>
 	<br>
 <p><sup style="font-size: 12px;">6</sup> El narrador, que ha pasado semanas revisando los archivos de la UNAM y las cartas de la Señora Arriaga y los correos electrónicos sin terminar en la carpeta de borradores de David, se permite una confesión: el tomo faltante de la enciclopedia no era un accidente. Era una profecía. El vacío entre la G y la H, entre Francmasonería e Impresionismo, es el mismo vacío que David pasaría su vida tratando de llenar con lenguas, con filosofías, con migraciones y manuscritos y traducciones. No es casualidad que la enciclopedia perdiera ese volumen específico. Podría haber perdido la A. Podría haber perdido la Z. Pero perdió la G-H, el espacio entre dos mundos que no terminan de conectarse, entre el conocimiento secreto (la masonería) y el conocimiento sensible (el impresionismo). David creció en ese vacío. No lo sabía. Pensaba que era solo un libro incompleto. Pero los libros incompletos, en las casas mexicanas, no son defectos. Son herencias. Son el testimonio de que el conocimiento nunca está completo. De que siempre falta un volumen. De que la educación que recibimos, por muy enciclopédica que pretenda ser, tiene una página arrancada, un capítulo omitido, una entrada que alguien decidió no escribir. David dedicó su vida a escribir esa entrada. Tal vez no lo logró. O sí. Quizás nadie puede lograrlo. Pero el intento, ese intento obsesivo y hermoso y finalmente imposible, era la entrada. El narrador, que ha visto la estantería de la Señora Arriaga después de treinta años, puede confirmar que el tomo 7 nunca apareció. No importa. El vacío sigue ahí, entre los tomos 6 y 8, brillando como una pregunta que no necesita respuesta. Porque la respuesta, si existiera, ocuparía el vacío. Y el vacío, en esta novela, es el único espacio habitable. Como la cocina de la madre de David en la Narvarte. Como tantos espacios en esta ciudad donde siempre hay demasiadas personas y aún así el vacío, la ausencia y la soledad anidan en los lugares menos esperados. El vacío no es una ausencia. Es una presencia disfrazada. Y David, que aprendió a leer en ese vacío, fue el primero en reconocerlo. Por eso pudo desaparecer. Porque ya sabía, desde niño, que los lugares más importantes son los que no aparecen en el índice.</p>
-	<br>	
+	</section>
+		<br>
+	<section id="sec-VII">
 			<p style="text-align: center; font-size: 22px;"><strong>VII</strong></p>
 	<p></p>Cinco niños, entonces, nacidos en el lapso de cuatro años, en la misma ciudad imposible, bajo el mismo cielo marrón, respirando el mismo aire con plomo. Cinco niños que no se conocían —todavía no— pero que ya estaban, del modo en que todos los contemporáneos lo están, compartiendo una frecuencia.</p>
 <p>La frecuencia era esta:</p>
@@ -184,12 +254,15 @@
 <p>Veamos lo que los muertos pueden hacer.<sup style="font-size: 12px;">7</sup></p>
 	<br>
 <p><sup style="font-size: 12px;">7</sup> El narrador, que ha estado escuchando esa membrana durante años, quiere aclarar un malentendido: los muertos no son espectros. No son almas en pena. No son apariciones que asustan a los vivos en las películas de terror mexicanas. Los muertos son más simples y más difíciles: son los que ya no están pero siguen hablando. Su voz no se escucha con los oídos. Se escucha con las costillas. Con ese lugar detrás del esternón donde Kimmy siente las hormigas, donde Agosto siente el peso de la ausencia paterna, donde Sweet siente el temblor, donde Aldous siente la cancha, donde David siente el vacío entre la G y la H. Esa es la frecuencia que usan para comunicarse. Pero no pertenece a los muertos, sino a los vivos que se niegan a olvidar que los muertos todavía comen con ellos. Por eso el Día de Muertos no es un día. Es un estado de agregación. Es la constatación de que la materia no desaparece. Se transforma. Se sienta en la mesa. Se come un pan de muerto. Se toma un mezcal. Se escucha. Y esta novela, lo entenderá el lector, está llena de muertos que nunca mueren del todo. El padre de David, que fuma Delicados en la memoria. El Cóndor de Tacubaya, que predice la lluvia con las rodillas desde el más allá. Don Refugio, cuya frase sigue pegada en la pared de Kimmy. El temblor de 1985, que sigue temblando en el líquido amniótico de Sweet. No son personajes. Son condiciones de lo que es posible. Son las fallas geológicas sobre las que se construyó esta historia. Y las fallas, aunque no las veas, siguen moviéndose. El narrador, que ha sentido ese movimiento mientras escribía, puede confirmar que no es un espacio cómodo. Pero es real. Y lo real, en una época de ficciones, es el único material que vale la pena narrar. Por eso esta nota al pie no es una nota al pie. Es un aviso: los muertos están a punto de hablar. Si prestas atención, oirás que su voz no es triste. Es insistente. Es la voz de los que se fueron sin permiso y siguen exigiendo aparecer en las historias que contamos. No por ellos sino por nosotros. Porque si no aparecen en nuestras historias, no aparecerán en las de nadie más. Y la historia, ese edificio del que tanto hablan los académicos, no es más que el registro de quienes se negaron a callar. Nosotros no callamos. Ni los muertos ni los vivos. Por eso esta novela, a pesar de todo, no es una elegía. Es una conversación. Y las conversaciones, como los sábados que vendrán en la Narvarte, no terminan. Solo hacen una pausa para que alguien sirva más mole, mientras alguien se prepara para comenzar a contar la historia de su vida y de sus ausencias.</p>
-	<br>	
+	</section>
+		<br>	
 
 
 
 
-
+  <div style="text-align: center; margin-top: 40px;">
+        <a href="#top" style="color: #ff3401; font-weight: bold; text-decoration: none;">↑ Volver al inicio</a>
+    </div>
 	<hr style="border: none; border-top: 2px solid #000; margin-bottom: 2em;">
 	<footer><p>Disfruta la lectura</p><p>Todos los derechos reservados</p><p>©crank.mx ©flc</p><p style="text-align: center; font-size: 20px;"><strong>2026</strong></p></footer>
 
